@@ -33,7 +33,7 @@ var axiosKeywords = function axiosKeywords(config, _a) {
     urlWhitelist = urlWhitelist || [];
     var urlWhitelistPass = urlWhitelist.length > 0 ? (urlWhitelist || []).some(function (reg) {
       return reg.test(config.url);
-    }) : true;
+    }) : false;
 
     if (!keywordsDetection || !data || urlWhitelistPass) {
       return Promise.resolve(config);
