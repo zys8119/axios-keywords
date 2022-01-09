@@ -25,7 +25,7 @@ const axiosKeywords:AxiosKeywordsType =  (config, {
     try {
         // 判断是否进行关键字敏感检测
         urlWhitelist = urlWhitelist || [];
-        const urlWhitelistPass = urlWhitelist.length > 0 ? (urlWhitelist || []).some(reg=>reg.test(config.url)):true;
+        const urlWhitelistPass = urlWhitelist.length > 0 ? (urlWhitelist || []).some(reg=>reg.test(config.url)):false;
         if(!keywordsDetection|| !data || urlWhitelistPass){
             return Promise.resolve(config);
         }
