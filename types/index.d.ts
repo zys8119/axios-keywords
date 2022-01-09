@@ -5,6 +5,8 @@ export interface AxiosKeywordsOptions {
 
     /**
      * 需要敏感检测数据
+     * url参数处理示例：
+     * Object.fromEntries(((/(?:\?((.|\n)*))/.exec(youAppUrl)||[])[1]||"").split("&").filter(e=>e).map(e=>e.split("=")))
      */
     data?:any;
     /**
