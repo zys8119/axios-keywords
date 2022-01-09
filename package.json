@@ -1,0 +1,45 @@
+{
+  "name": "axios-keywords",
+  "version": "0.0.0",
+  "description": "axio敏感词检测",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "start": "gulp default",
+    "build": "npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zys8119/axios-keywords.git"
+  },
+  "keywords": [
+    "keywords"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zys8119/axios-keywords/issues"
+  },
+  "homepage": "https://github.com/zys8119/axios-keywords#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "sensitive-word-helper-plus": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/types": "^7.16.0",
+    "@types/node": "^16.11.9",
+    "@vue/compiler-sfc": "^3.2.22",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-umd": "^2.0.0",
+    "typescript": "^4.5.2",
+    "vite": "^2.6.14",
+    "vue": "^3.2.22"
+  }
+}
